@@ -11,6 +11,8 @@ export const useDarkMode = (key, initialValues) => {
             document.body.classList.remove("dark-mode");
             }
     }, [darkMode]); 
-}
+
+    return [darkMode, setDarkMode];
+};
 
 export default useDarkMode;
